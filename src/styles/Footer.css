@@ -1,0 +1,135 @@
+/* footer */
+.footer {
+    /* margin-top: 136.6px; */
+    background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+    padding-top: 118px;
+    padding-bottom: 109px;
+    position: relative;
+}
+
+.footer .navbar-brand {
+    margin-bottom: 17px;
+}
+
+.footer .navbar-brand .brand-shape {
+    background-color: var(--clr-white);
+    color: var(--clr-blue);
+}
+
+.footer .navbar-brand .brand-text {
+    color: var(--clr-white);
+}
+
+.footer-list {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+.footer-item:nth-child(1) {
+    padding-right: 100px;
+}
+
+.footer-item:nth-child(1) p {
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+.footer-item:nth-child(1) .copyright-text {
+    margin-top: 31px;
+    line-height: 1.55;
+}
+
+.footer-item-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.footer-links li a {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.footer-links li a:hover {
+    opacity: 0.95;
+    text-decoration: underline;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-element-1 {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.footer-element-2 {
+    position: absolute;
+    right: 91px;
+    top: -70px;
+    z-index: 1;
+}
+
+.footer-links.horizontal-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links.horizontal-links li {
+    margin-right: 1rem;
+}
+
+.footer-links.horizontal-links li:last-child {
+    margin-right: 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 1120px) {
+
+    .footer-item:nth-child(1) {
+        padding-right: 0;
+    }
+
+    .footer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    /* footer */
+    .footer-element-1 {
+        width: 60px;
+    }
+
+    .footer-element-22 {
+        width: 60px;
+        right: 0;
+        top: -35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* footer */
+    .footer-list {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .footer-list .navbar-brand {
+        justify-content: center;
+    }
+
+    .footer-list .footer-item:nth-child(1) {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

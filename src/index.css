@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.6;
+  height: 100%;
+  font-weight: 300;
+}
+
+:root {
+  --clr-blue: #458ff6;
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-gray: #7d7987;
+  --clr-dark-blue: #233348;
+  --clr-dark-purple: #1f1534;
+  --font-family-mulish: 'Mulish', sans-serif;
+  --transition-default: all 300ms ease-in-out;
+}
+
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: var(--transition-default);
+}
+
+a:focus,
+a:hover {
+  color: unset;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+textarea {
+  resize: none;
+}
+
+img,
+object,
+embed,
+video {
+  max-width: 100%;
+}
+
+/* body {
+  font-family: var(--font-family-mulish);
+  line-height: 1.6;
+  height: 100%;
+  font-weight: 300;
+} */
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
